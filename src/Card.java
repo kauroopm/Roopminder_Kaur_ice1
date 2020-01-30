@@ -1,4 +1,7 @@
- 
+/*
+Author: Roopminder Kaur
+ID: 991566979
+*/
 /**
  * Starter code for the Card class.
  * To be used in Week 4.
@@ -10,8 +13,16 @@ public class Card {
         public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
         private final Suit suit;
         private final Value value;
-        
-        public Card(Suit s, Value gVal)
+        private String Joker;
+
+    public String getJoker() {
+        return Joker;
+    }
+
+    public void setJoker(String Joker) {
+        this.Joker = Joker;
+    }
+                public Card(Suit s, Value gVal)
         {
            suit =s;
            value= gVal;
