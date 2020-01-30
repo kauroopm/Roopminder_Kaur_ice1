@@ -15,11 +15,11 @@ public class Card {
         private final Value value;
         private String Joker;
 
-    public String getJoker() {
+    public String getJoker() { // getter method for joker
         return Joker;
     }
 
-    public void setJoker(String Joker) {
+    public void setJoker(String Joker) { //setter method for joker
         this.Joker = Joker;
     }
                 public Card(Suit s, Value gVal)
@@ -27,12 +27,12 @@ public class Card {
            suit =s;
            value= gVal;
         }
-	public Value getValue() {
+	public Value getValue() { //getter method for value
 		return this.value;
 	}
-
+      
 	
-	public Suit getSuit() {
+	public Suit getSuit() { //setter method for value
 		return this.suit;
         }
 }
